@@ -1,114 +1,83 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
-
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+import {View, Text, StyleSheet, ScrollView} from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const App: () => React$Node = () => {
+const App = () => {
   return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </>
+    <ScrollView style={styles.container}>
+      <View style={styles.postContainer}>
+        <Text style={styles.postTitle}>Estudando React Native</Text>
+        <Text style={styles.postDescription}>
+          Cillum eiusmod laboris nostrud non id velit sunt minim do eiusmod
+          laborum aliqua. Anim ipsum dolore excepteur velit nulla anim ex anim
+          consectetur eiusmod consectetur aliqua duis. Velit incididunt dolore
+          dolor velit. Excepteur mollit et enim velit in ea reprehenderit mollit
+          pariatur mollit culpa. Duis proident sit amet eiusmod incididunt
+          voluptate duis tempor velit sint.
+        </Text>
+      </View>
+      <View style={styles.postContainer}>
+        <Text style={styles.postTitle}>Estudando React Native</Text>
+        <Text style={styles.postDescription}>
+          Cillum eiusmod laboris nostrud non id velit sunt minim do eiusmod
+          laborum aliqua. Anim ipsum dolore excepteur velit nulla anim ex anim
+          consectetur eiusmod consectetur aliqua duis. Velit incididunt dolore
+          dolor velit. Excepteur mollit et enim velit in ea reprehenderit mollit
+          pariatur mollit culpa. Duis proident sit amet eiusmod incididunt
+          voluptate duis tempor velit sint.
+        </Text>
+      </View>
+      <View style={styles.postContainer}>
+        <Text style={styles.postTitle}>Estudando React Native</Text>
+        <Text style={styles.postDescription}>
+          Cillum eiusmod laboris nostrud non id velit sunt minim do eiusmod
+          laborum aliqua. Anim ipsum dolore excepteur velit nulla anim ex anim
+          consectetur eiusmod consectetur aliqua duis. Velit incididunt dolore
+          dolor velit. Excepteur mollit et enim velit in ea reprehenderit mollit
+          pariatur mollit culpa. Duis proident sit amet eiusmod incididunt
+          voluptate duis tempor velit sint.
+        </Text>
+      </View>
+      <View style={styles.postContainer}>
+        <Text style={styles.postTitle}>Estudando React Native</Text>
+        <Text style={styles.postDescription}>
+          Cillum eiusmod laboris nostrud non id velit sunt minim do eiusmod
+          laborum aliqua. Anim ipsum dolore excepteur velit nulla anim ex anim
+          consectetur eiusmod consectetur aliqua duis. Velit incididunt dolore
+          dolor velit. Excepteur mollit et enim velit in ea reprehenderit mollit
+          pariatur mollit culpa. Duis proident sit amet eiusmod incididunt
+          voluptate duis tempor velit sint.
+        </Text>
+      </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
+  container: {
+    flex: 1,
+    backgroundColor: '#222',
   },
-  engine: {
-    position: 'absolute',
-    right: 0,
+  welcome: {
+    fontSize: 20,
+    textAlign: 'center',
+    margin: 10,
+    color: '#FFF',
   },
-  body: {
-    backgroundColor: Colors.white,
+  postContainer:{
+    marginVertical:10,
+    marginHorizontal:20,
+    padding:2,
+    backgroundColor:"#FFF",
+    borderRadius:3
   },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  postTitle:{
+    fontSize:18,
+    fontWeight:"bold",
+    marginBottom:5,
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
+  postDescription:{
+    color:"#666"
+  }
 });
 
 export default App;
